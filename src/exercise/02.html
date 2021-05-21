@@ -26,7 +26,9 @@
     const element = React.createElement(
       'div',
       {className: 'container'},
-      'Hello World',
+      React.createElement('span', {}, 'Hello'),
+      ' ',
+      React.createElement('span', {}, 'World'),
     )
     ReactDOM.render(element, rootElement)
   </script>
